@@ -1,10 +1,12 @@
-import Card from "./Card";
+import React from "react";
 
-function App() {
+
+const Card = ({nombre, color}) => {
   return (
-    <div className="App">
-      <Card />
-    </div>
-  );
-}
-export default App;
+      <div>
+          <h4>El color de {nombre} es {color} </h4>
+      </div>
+  )
+  }
+  
+  export default Card;
